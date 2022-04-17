@@ -261,7 +261,7 @@ internal class WallServiceAddTest {
         )
         // создаём информацию об обновлении
         val update = Post(
-            id = 1,
+            id = 25,
             ownerId = 66,
             fromId = 33,
             createdBy = 99,
