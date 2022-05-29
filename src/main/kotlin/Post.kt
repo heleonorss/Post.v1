@@ -24,6 +24,7 @@ data class Post(
     val views: Views,
     val donut: Donut
 
+
 ) {
 
 
