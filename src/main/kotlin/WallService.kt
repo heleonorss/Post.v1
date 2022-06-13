@@ -55,4 +55,8 @@ class WallService {
         return false
     }
 
+    fun removeAll() {
+        posts = emptyArray()
+    }
 }
+

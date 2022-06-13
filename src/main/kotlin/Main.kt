@@ -1,5 +1,3 @@
-
-
 fun main() {
 
     val post = Post(
@@ -26,8 +24,13 @@ fun main() {
         likes = Likes(33, false, false, false),
         reposts = Reposts(1, false),
         views = Views(525),
-        donut = Donut(false, 0, false, false, "-", 0)
-    )
+        donut = Donut(false, 0, false, false, "-", 0),
+        attachments = null,
+        copyHistory = null,
+        postSource = null,
+
+
+        )
 
     val postCat = Post(
         id = 0,
@@ -53,14 +56,17 @@ fun main() {
         likes = Likes(33, false, false, false),
         reposts = Reposts(1, false),
         views = Views(525),
-        donut = Donut(false, 0, false, false, "-", 0)
+        donut = Donut(false, 0, false, false, "-", 0),
+        attachments = null,
+        copyHistory = null,
+        postSource = null,
     )
 
     val service = WallService()
-   service.add(post)
-   service.add(postCat)
+    service.add(post)
+    service.add(postCat)
 
-   service.update(post)
+    service.update(post)
 }
 
 

@@ -17,13 +17,16 @@ data class Post(
     val markedAsAds: Boolean, //Информация о том, содержит ли запись отметку «реклама»
     val isFavorite: Boolean, //если объект добавлен в закладки у текущего пользователя
     val postponedId: Int, //Идентификатор отложенной записи. Это поле возвращается тогда, когда запись стояла на таймере.
-    val comments: Comments,
+    val comments: Comments?,
     val copyright: Copyright?,
-    val likes: Likes,
-    val reposts: Reposts,
-    val views: Views,
-    val donut: Donut?
-
+    val likes: Likes?,
+    val reposts: Reposts?,
+    val views: Views?,
+    val donut: Donut?,
+    val indexPosts: Int = 0,
+    val attachments: Array<Attachments>?,
+    val copyHistory: Array<Post>?,
+    val postSource: Any?
 
 ) {
 
